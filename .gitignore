@@ -12,3 +12,5 @@
 hs_err_pid*
 # rchu - exclude zip files.
 *.zip
+__MACOSX
+.DS_Store

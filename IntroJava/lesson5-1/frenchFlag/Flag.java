@@ -23,11 +23,11 @@ public class Flag
     public Color getColorAt(int x, int y)
     {
         Color c;
-        if (x < width / 3)
+        if (x < this.width / 3)
         {
             c = Color.BLUE;
         }
-        else if (x < width * 2 / 3)
+        else if (x < this.width * 2 / 3)
         {
             c = Color.WHITE;
         }

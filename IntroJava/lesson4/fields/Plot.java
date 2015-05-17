@@ -4,6 +4,7 @@ public class Plot
 {
     private int width;
     private int length;
+   
 
     /**
         Constructs a plot of a given size.
@@ -26,5 +27,14 @@ public class Plot
         // the number of even and odd rows,
         // the number of columns in each even and odd row,
         // and finally the total number of fields
+        int totalRows = 1 + (int)( (this.length - (2*radius )) / (radius * Math.sqrt(3)) );
+        int numOddRows = (totalRows + 1)/2;
+        int numEvenRows = (totalRows)/2;
+        int circlesPerOddRow = this.width/(2*radius);
+        int circlesPerEvenRow = (this.width-radius) / (2*radius);
+        int totalCircles = numOddRows * circlesPerOddRow + numEvenRows * circlesPerEvenRow;
+        return totalCircles;
+
+
     }
 }

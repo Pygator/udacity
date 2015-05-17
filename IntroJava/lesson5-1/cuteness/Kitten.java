@@ -16,18 +16,16 @@ public class Kitten
     public String getCuteness() 
     {
         String cuteness = "";
-        if (months > 6)
-        {
+             // TODO: add the code to determine the cuteness
+        if (months < 2 ) {
+        cuteness = "not so cute";
+        }
+        else if ( months <= 6 ) {
+        cuteness = "super cute";
+        }
+        else {
             cuteness = "cute";
-        }
-        else if (months >=2)
-        {
-            cuteness = "super cute";
-        }
-        else
-        {
-            cuteness = "not so cute";
-        }
+        };
         return cuteness;
     }
 }

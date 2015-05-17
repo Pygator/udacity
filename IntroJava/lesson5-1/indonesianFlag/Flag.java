@@ -7,7 +7,8 @@ public class Flag
     public Color getColorAt(int x, int y)
     {
         Color c;
-        if (y >= height / 2)
+        int midpoint = (int)(height/2);
+        if (y >= midpoint)
         {
             c = Color.WHITE;
         }
