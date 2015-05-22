@@ -44,7 +44,7 @@ public class Balloon
     }
   public double getRadius() {
       //double myVolume = (4/3)*Math.PI*Math.pow(r,3);
-      this.myRadius = Math.pow(myVolume/( (4/3)*Math.PI ),(1.0/3));
+      this.myRadius = Math.pow(myVolume/( (4.0/3)*Math.PI ),(1.0/3));
       return this.myRadius;
     }
 }
